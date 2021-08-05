@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whiteColorVentax"
+    android:orientation="vertical"
+    tools:context=".Fragment.Menu.MenuFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/showNavDrawerButton"
+            android:background="@drawable/ic_baseline_vertical_split_24"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_margin="10dp"
+            android:layout_height="30dp"/>
+
+        <androidx.appcompat.widget.SearchView
+            app:commitIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            app:searchIcon="@drawable/ic_baseline_search_24"
+            app:closeIcon="@drawable/ic_baseline_close_24"
+            android:background="@drawable/style_custom_selected_edittext"
+            app:queryHint="@string/buscar_empresa"
+            android:id="@+id/searchCompanySearchView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:id="@+id/filterByImageButton"
+            android:background="@drawable/ic_baseline_filter_list_24"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_margin="15dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:minHeight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:background="@drawable/style_dialog_information">
+        <TextView
+            android:id="@+id/withOutFavTextView"
+            android:layout_marginStart="12dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sin favoritos"
+            android:textColor="@color/grayColorVentax"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/favRecyclerView"
+
+
+
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/noRegisterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AÚN NO HAY REGISTROS"
+        android:textColor="@color/grayColorVentax"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:fontFamily="monospace"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+
+
+</LinearLayout>

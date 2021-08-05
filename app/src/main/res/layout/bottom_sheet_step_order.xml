@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_bottom_sheet_company"
+    android:gravity="center"
+    android:minHeight="320dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/topMenuFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="20dp"
+            android:fontFamily="monospace"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/commentImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_baseline_comment_24"
+            android:padding="13dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/stepOrderBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/style_dialog_information"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.shuhart.stepview.StepView
+            android:id="@+id/orderStepView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:padding="8dp"
+            app:sv_animationType="All"
+            app:sv_doneCircleColor="@color/blueGrayColorVentax"
+            app:sv_doneStepLineColor="@color/blackColorVentax"
+            app:sv_doneStepMarkColor="@color/finishedOrderColorVentax"
+            app:sv_doneTextColor="@color/grayColorVentax"
+            app:sv_nextStepCircleColor="@color/grayColorVentax"
+            app:sv_nextStepCircleEnabled="true"
+            app:sv_nextStepLineColor="@color/grayColorVentax"
+            app:sv_nextTextColor="@color/grayColorVentax"
+            app:sv_selectedCircleColor="@color/blueColorVentax"
+            app:sv_selectedCircleRadius="18dp"
+            app:sv_selectedStepNumberColor="@color/whiteColorVentax"
+            app:sv_selectedTextColor="@color/blackColorVentax"
+            app:sv_stepLineWidth="1dp" />
+
+        <TextView
+            android:id="@+id/descriptionStepTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomMenuFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/cancelOrderUButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_popup"
+            android:shadowColor="#FF0000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="Cancelar"
+            android:textAlignment="center"
+            android:textColor="@color/redColorVentax"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/contactImageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/socialmedia_whatsapp" />
+
+        <Button
+            android:id="@+id/nextOrderUButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_popup"
+            android:shadowColor="#0000FF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="Sig. →"
+            android:textAlignment="center"
+            android:textColor="@color/blueColorVentax" />
+    </FrameLayout>
+
+</FrameLayout>

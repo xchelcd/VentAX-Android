@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/companyCardView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="15dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="10dp">
+
+    <FrameLayout
+        android:background="@drawable/style_outline_fucsia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:shadowColor="@color/whiteColorInformation"
+            android:shadowDy="5"
+            android:shadowDx="5"
+            android:shadowRadius="30"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:elevation="5dp"
+            android:fontFamily="monospace"
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="40sp" />
+
+        <ImageButton
+            android:backgroundTint="@color/fucsiaColorVentax"
+            android:elevation="10dp"
+            android:id="@+id/favImageButton"
+            android:layout_gravity="end|bottom"
+            android:padding="13dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/ic_baseline_favorite_border_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

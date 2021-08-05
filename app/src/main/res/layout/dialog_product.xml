@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainDialogCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/backgroundDialogLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="3dp"
+                android:maxHeight="100dp"
+                android:padding="1dp">
+
+
+                <ImageView
+                    android:id="@+id/oneProductImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="100dp"
+                    android:minWidth="90dp"
+                    android:minHeight="90dp"
+                    android:src="@drawable/ic_baseline_library_add_24" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/titleProductEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Nombre del producto"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/grayColorVentax"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/priceProductEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="67dp"
+                        android:layout_gravity="center"
+                        android:hint="Precio $ MX"
+                        android:inputType="number|numberDecimal"
+                        android:minWidth="70dp"
+                        android:textColor="@color/grayColorVentax"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/grayColorVentax"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/idProductTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:paddingBottom="4dp"
+                        android:text="ID: "
+                        android:textColor="@color/grayColorVentax"
+                        android:textColorHint="@color/grayColorVentax" />
+
+                    <EditText
+                        android:id="@+id/descriptionProductEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:hint="Descripción del producto\n(0/50 caracteres)"
+                        android:maxLength="50"
+                        android:textAlignment="center"
+                        android:textColor="@color/grayColorVentax"
+                        android:textColorHint="@color/grayColorVentax"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/detailsProductEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:hint="Detalles del producto\n(0/150 caracteres)"
+                        android:maxLength="150"
+                        android:textAlignment="center"
+                        android:textColor="@color/grayColorVentax"
+                        android:textColorHint="@color/grayColorVentax"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/buttonsLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/deleteProductUButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_popup"
+                        android:shadowColor="#FF0000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:text="Eliminar"
+                        android:textAlignment="center"
+                        android:textColor="@color/redColorVentax"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/addProductButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_popup"
+                        android:shadowColor="#0000FF"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:text="Agregar"
+                        android:textAlignment="center"
+                        android:textColor="@color/blueColorVentax" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/closeImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_baseline_close_24"
+            android:padding="15dp" />
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>

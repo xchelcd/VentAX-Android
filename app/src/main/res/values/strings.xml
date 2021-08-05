@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">VAX</string>
+    <string name="VAX">VAX™</string>
+
+    <!-- CATEGORY -->
+    <string name="food">Comida</string>
+    <string name="electronic">Electrónica</string>
+    <string name="health">Salud</string>
+    <string name="style">Estilo</string>
+    <string name="desserts">Postres</string>
+    <string name="sports">Deportes</string>
+    <string name="fashion">Moda</string>
+    <string name="crafts">Manualidades</string>
+    <string name="gifts">Regalos</string>
+    <string name="pets">Mascotas</string>
+    <string name="clothes">Ropa</string>
+    <string name="accesory">Accesorios</string>
+    <string name="art">Arte</string>
+
+    <!-- ACCOUNT TYPE -->
+    <string name="basic">Básica</string>
+    <string name="premium">Premium</string>
+    <string name="business">Business</string>
+
+    <!-- DAY -->
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+
+    <!-- NAVIGATION DRAWER -->
+    <string name="menu">Menú</string>
+    <string name="my_profile">Mi perfil</string>
+    <string name="my_shoppingcart">Carrito</string>
+    <string name="my_company">Mi empresa</string>
+    <string name="order_company">Pedidos</string>
+    <string name="products">Productos</string>
+    <string name="configurations">Configuraciones</string>
+    <string name="faq">FAQ</string>
+    <string name="log_out">Cerrar sesión</string>
+
+    <!--NAVIGATION DRAWER TITLE FRAGMENT-->
+    <string name="productos">Productos</string>
+    <string name="carrito_de_compras">Carrito de compras</string>
+    <string name="perfil">Perfil</string>
+    <string name="configuraciones">Configuraciones</string>
+    <string name="preguntas_frecuentes">Preguntas frecuentes</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="pedidos_realizados">Mis Pedidos</string>
+    <string name="pedidos_company">Solicitudes</string>
+
+    <!-- STATE ORDER -->
+    <string name="pending">Pendiente</string>
+    <string name="acepted">Aceptado</string>
+    <string name="proccess">En proceso</string>
+    <string name="finished">Terminado</string>
+    <string name="canceled">Cancelado</string>
+    <string name="pending_">Esperando confirmación</string>
+    <string name="acepted_">Pedido aceptado</string>
+    <string name="proccess_">Estamos trabajando en ello</string>
+    <string name="finished_">Listo para definir entrega</string>
+
+
+    <!-- ERROR -->
+    <string name="error_update_photo">No se puedo actualizar la foto</string>
+
+    <string name="without_coincidance">Sin coincidencias</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="empresas">EMPRESARIOS</string>
+    <string name="finding_user">Buscando usuario \"</string>
+
+    <string name="require_internet_permissions">Requiere aceptar los permisos de internet.</string>
+    <string name="require_read_storage_permissions">Requiere aceptar los permisos de acceso al almacenamiento</string>
+    <string name="no_error_error">No se logró identificar el error</string>
+
+    <string name="ir">IR</string>
+    <string name="ver_horarios">Ver horarios</string>
+    <string name="welcome_to">Bienvenido a </string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="buscar_empresa">BUSCAR EMPRESA</string>
+    <string name="redes_sociales_">Redes Sociales</string>
+    <string name="redes_sociales">Redes Sociales ↓</string>
+    <string name="cambia_tu_horario">Cambia tu horario ↓</string>
+    <string name="horarios">Horarios</string>
+    <string name="dise_a_tu_espacio">Diseña tu espacio ↓</string>
+    <string name="hex"># Hex</string>
+    <string name="diseño">Diseño</string>
+    <string name="redes_sociales_de_la_empresa">Redes sociales de la empresa ↓</string>
+    <string name="guardar_todo">GUARDAR TODO</string>
+    <string name="_1_columna">1 Columna</string>
+    <string name="_2_columnas">2 Columnas</string>
+    <string name="question">Pregunta</string>
+    <string name="answer">Respuesta</string>
+    <string name="edit_question_n">Editar Q</string>
+    <string name="select_a_question">Selecciona una pregunta para editar</string>
+    <string name="question_deleted">Pregunta eliminada</string>
+    <string name="mi_empresa">Mi empresa</string>
+
+    <string name="crear_empresa">CREAR EMPRESA</string>
+
+    <string name="no_especificado">No especificado</string>
+    <string name="information_account_type">MEJORA TU CUENTA PARA OBTENER MÁS BENEFICIOS</string>
+    <string name="information_design">MODIFICA LA VISTA QUE LOS USUARIOS VERÁN AL ENTRAR A TU NEGOCIO</string>
+    <string name="information_socialmedia">MODIFICA LAS REDES SOCIALES DE TU NEGOCIO. ESTAS SE MOSTRARÁN A TODOS LOS USUARIOS</string>
+    <string name="information_schedule">MODIFICA EL HORARIO DE ATENCIÓN.\nCUANDO ESTÉ FUERA DED HORARIO NO RECIBIRÁS NINGUNA NOTIFICACIÓN Y LOS PEDIDOS QUE SE HAGAN ENE STE TIEMPO SE MANTENDRÁN EN UNA LISTA DE ESPERA AUTOMÁTICA</string>
+    <string name="information_faq">LAS PREGUNTAS FRECUENTES MARCADAS SERÁN VISIBLES PARA LOS DEMÁS USUARIOS.\nPARA ELIMINAR SOLO DEJA LA PREGUNTA Y RESPUESTA EN BLANCO</string>
+    <string name="information_affiliate">AÚN NO TIENES UNA EMRESA REGISTRADA.\n¡REGISRA TU EMPRESA Y DEJA QUE TODOS LOS USUARIOS VEAN LO QUE VENDES! ☻</string>
+    <string name="sin_registro">Sin regsitro</string>
+    <string name="nulo">NULL</string>
+    <string name="affiliate">Afiliado</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total">Total:</string>
+    <string name="filter">Filtrar</string>
+    <string name="all">Todos</string>
+    <string name="welcome_to_vax">¡Bienvenido a VAX!</string>
+    <string name="welcome_to_vax_body">\"En breve recibirás una correo de aceptación para empezar a diseñar tu espacio en VAX \"</string>
+    <string name="enviar">Enviar</string>
+    <string name="buscar_producto">BUSCAR PRODUCTO</string>
+    <string name="ingrese_qty_valid">Ingrese una cantidad válida</string>
+    <string name="finalize_order">Archivar</string>
+    <string name="guardar">Guardar</string>
+    <string name="eliminar_q">Eliminar Q</string>
+    <string name="limpiar">Limpiar</string>
+
+
+</resources>

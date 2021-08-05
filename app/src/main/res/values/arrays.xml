@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_activityScreenTitles">
+        <item>@string/menu</item>
+        <item>@string/my_profile</item>
+        <item>@string/my_shoppingcart</item>
+        <item>@string/my_company</item>
+        <item>@string/order_company</item>
+        <item>@string/products</item>
+        <item>@string/configurations</item>
+        <item>@string/faq</item>
+        <item>@string/IDAX</item>
+        <item>@string/log_out</item>
+    </string-array>
+
+    <array name="id_activityScreenIcons">
+        <item>@drawable/ic_outline_home_24</item>
+        <item>@drawable/ic_baseline_person_24</item>
+        <item>@drawable/ic_baseline_shopping_cart_24</item>
+        <item>@drawable/ic_baseline_store_24</item>
+        <item>@drawable/ic_outline_fact_check_24</item>
+        <item>@drawable/ic_baseline_library_add_24</item>
+        <item>@drawable/ic_baseline_business_center_24</item>
+        <item>@drawable/ic_baseline_device_unknown_24</item>
+        <item>@drawable/idax</item>
+        <item>@drawable/ic_outline_exit_to_app_24</item>
+    </array>
+
+    <string-array name="id_proccessStepView">
+        <item>@string/pending</item>
+        <item>@string/proccess</item>
+        <item>@string/finished</item>
+    </string-array>
+
+    <!--
+    <array name="categoryArray">
+        <item> @string/food</item>
+        <item> @string/electronic</item>
+        <item> @string/health</item>
+        <item> @string/style</item>
+        <item>@string/desserts</item>
+        <item>@string/sports</item>
+        <item>@string/fashion</item>
+        <item>@string/crafts</item>
+        <item>@string/gifts</item>
+        <item>@string/pets</item>
+        <item> @string/clothes</item>
+        <item> @string/accesory</item>
+        <item> @string/art</item>
+    </array>
+    -->
+
+    <string name="IDAX">IDAX™</string>
+
+</resources>

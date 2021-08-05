@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@drawable/style_bottom_sheet_company"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/whiteColorVentax"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="50dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/picassoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="CARGANDO..."
+                android:textAlignment="center" />
+
+            <TextView
+                android:elevation="20dp"
+                android:id="@+id/categoryCompnayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:layout_margin="20dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/blackColorVentax"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/nameCompanyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:shadowDx="5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:textAlignment="center"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionCompanyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/blackColorVentax" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:background="@drawable/style_dialog_information"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/goToCompanyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="15dp"
+                android:fontFamily="monospace"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/ir"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/scheduleImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_baseline_schedule_24"
+                android:elevation="50dp"
+                android:padding="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/socialMediaLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

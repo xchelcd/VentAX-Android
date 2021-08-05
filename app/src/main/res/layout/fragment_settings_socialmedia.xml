@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="8dp"
+    android:background="@drawable/style_dialog_information"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_baseline_info_24"
+        android:id="@+id/socialMediaInformationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:text="@string/redes_sociales"
+        android:textAlignment="center"
+        android:textColor="@color/blackColorVentax"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:padding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/facebookEditCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:paddingEnd="5dp"
+                android:text="FACEBOOK" />
+
+            <CheckBox
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/instagramEditCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="INSTAGRAM" />
+
+            <CheckBox
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/twitterEditCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="TWITTER" />
+
+            <CheckBox
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/webEditCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="WEB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:textColorHint="@color/grayColorVentax"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/facebookEditEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:enabled="false"
+                android:fontFamily="monospace"
+                android:hint="Facebook ID"
+                android:padding="5dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:textColorHint="@color/grayColorVentax"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/instagramEditEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:enabled="false"
+                android:fontFamily="monospace"
+                android:hint="/"
+                android:padding="5dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:textColorHint="@color/grayColorVentax"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/twitterEditEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:enabled="false"
+                android:fontFamily="monospace"
+                android:hint="\@"
+                android:padding="5dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:inputType="textNoSuggestions"
+                android:textColorHint="@color/grayColorVentax"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/webEditEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:enabled="false"
+                android:fontFamily="monospace"
+                android:hint="http://"
+                android:padding="5dp"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#009CE7</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="blueColorVentax">#009CE7</color>
+    <color name="blueGrayColorVentax">#93D5CF</color>
+    <color name="fucsiaColorVentax">#FF4A87</color>
+    <color name="yellowColorVentax">#EDE845</color>
+    <color name="redColorVentax">#ED4553</color>
+
+    <color name="pendingOrderColorVentax">#ED4545</color><!-- BLACK 000000 -->
+    <color name="aceptedOrderColorVentax">#EDA145</color><!-- ORANGE EDA145 -->
+    <color name="proccessOrderColorVentax">#93ED45</color><!-- BLUE 45B2ED -->
+    <color name="finishedOrderColorVentax">#45B2ED</color><!-- GREEN 93ED45 -->
+    <color name="canceledOrderColorVentax">#000000</color><!-- RED ED4545 -->
+
+    <color name="whiteColorVentax">#FFFFFF</color>
+    <color name="blackColorVentax">#000000</color>
+    <color name="grayColorVentax">#26000000</color>
+
+    <color name="grayColorVentaxSchedule">#26000000</color>
+    <color name="whiteColorInformation">#B3FFFFFF</color>
+    <color name="white2ColorVentax">#59FFFFFF</color>
+    <color name="iconSelectedColorVentax">#DC5E5E</color>
+    <color name="textSelectedColorVentax">#41DD35</color>
+    <color name="iconNormalColorVentax">#D517DC</color>
+    <color name="textNormalColorVentax">#D3B353</color>
+    <color name="purpleColorVentax">#737BA5</color>
+</resources>

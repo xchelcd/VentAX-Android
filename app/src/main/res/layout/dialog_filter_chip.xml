@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/style_outline_fucsia"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackColorVentax"
+        android:fontFamily="monospace"
+        android:text="Filtros por categoría"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/food"
+                android:layout_margin="8dp"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:textColor="@color/blackColorVentax"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<!--
+context.getString(R.string.food);
+context.getString(R.string.electronic);
+context.getString(R.string.health);
+context.getString(R.string.style);
+context.getString(R.string.postres);
+context.getString(R.string.deportes);
+context.getString(R.string.moda);
+context.getString(R.string.manualidades);
+context.getString(R.string.regalos);
+context.getString(R.string.mascotas);
+-->

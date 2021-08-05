@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainViewFAQLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColorVentax"
+    android:orientation="vertical"
+    tools:context=".Fragment.FAQ.FAQFragment">
+
+    <TextView
+        android:drawableStart="@drawable/ic_baseline_vertical_split_24"
+        android:drawablePadding="5dp"
+        android:id="@+id/informationFAQTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:text="@string/preguntas_frecuentes"
+        android:textAlignment="center"
+        android:textColor="@color/blackColorVentax"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:visibility="gone"
+        android:padding="5dp"
+        android:id="@+id/saveAllFAQsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/style_popup"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.2"
+        android:text="@string/guardar_todo"
+        android:layout_gravity="center"
+        android:textColor="@color/blackColorVentax"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/newFAQLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/style_dialog_information"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/questionEditText"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:textColor="@color/blackColorVentax"
+            android:background="@drawable/style_custom_selected_edittext"
+            android:hint="@string/question"
+            android:textColorHint="@color/grayColorVentax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/answerEditText"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="15dp"
+            android:textColor="@color/blackColorVentax"
+            android:background="@drawable/style_custom_selected_edittext"
+            android:hint="@string/answer"
+            android:textColorHint="@color/grayColorVentax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/editFAQButton"
+                android:layout_gravity="center"
+                android:text="@string/edit_question_n"
+                android:textColor="@color/blackColorVentax"
+                android:background="@drawable/style_popup"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/deleteFAQButton"
+                android:shadowRadius="0.2"
+                android:shadowColor="@color/redColorVentax"
+                android:shadowDx="0.5"
+                android:shadowDy="0.5"
+                android:layout_gravity="start"
+                android:text="@string/eliminar_q"
+                android:textColor="@color/blackColorVentax"
+                android:background="@drawable/style_outline_fucsia"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/clearFieldsFAQsButton"
+                android:layout_gravity="end"
+                android:text="@string/limpiar"
+                android:textColor="@color/blackColorVentax"
+                android:background="@drawable/style_popup"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <ExpandableListView
+        android:childDivider="@color/grayColorVentax"
+        android:dividerHeight="1dp"
+        android:id="@+id/faqExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_dialog_information" />
+
+</LinearLayout>

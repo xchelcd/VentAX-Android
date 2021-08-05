@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="40dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/style_dialog_information"
+    android:orientation="vertical">
+
+    <TextView
+        android:drawableStart="@drawable/ic_baseline_info_24"
+        android:id="@+id/designInformationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/dise_a_tu_espacio"
+        android:textAlignment="center"
+        android:textColor="@color/blackColorVentax"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/blackColorVentax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Color de fondo de la vista principal" />
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/backgroundMainViewEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:digits="0123456789ABCDEF"
+                android:hint="@string/hex"
+                android:inputType="textCapCharacters|textVisiblePassword"
+                android:maxLength="6"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/blackColorVentax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Color de fondo de los producto" />
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:id="@+id/backgroundMainViewProductEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:digits="0123456789ABCDEF"
+                android:textColor="@color/blackColorVentax"
+                android:hint="@string/hex"
+                android:inputType="textCapCharacters|textVisiblePassword"
+                android:maxLength="6"
+                android:paddingStart="5dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackColorVentax"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Color de fondo de detalles del producto" />
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:id="@+id/backgroundDetailsProductEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:digits="0123456789ABCDEF"
+                android:textColor="@color/blackColorVentax"
+                android:hint="@string/hex"
+                android:inputType="textCapCharacters|textVisiblePassword"
+                android:maxLength="6"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackColorVentax"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Color de letra (Títulos)" />
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:id="@+id/colorTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackColorVentax"
+                android:layout_weight="2.5"
+                android:digits="0123456789ABCDEF"
+                android:hint="@string/hex"
+                android:inputType="textCapCharacters|textVisiblePassword"
+                android:maxLength="6"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackColorVentax"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Color de letra (Descripciones)" />
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:id="@+id/colorLetterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:digits="0123456789ABCDEF"
+                android:textColor="@color/blackColorVentax"
+                android:hint="@string/hex"
+                android:inputType="textCapCharacters|textVisiblePassword"
+                android:maxLength="6"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_margin="7dp"
+                android:id="@+id/numColumnsToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/style_popup"
+                android:padding="3dp"
+                android:textColor="@color/blackColorVentax"
+                android:textOff="@string/_1_columna"
+                android:textOn="@string/_2_columnas"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColorVentax"
+    android:orientation="vertical"
+    tools:context=".Activity.Login.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:hint="Celular"
+                android:id="@+id/userNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:elevation="10dp"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@color/blackColorVentax" />
+
+            <EditText
+                android:textColorHint="@color/grayColorVentax"
+                android:hint="Contraseña"
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/style_custom_selected_edittext"
+                android:elevation="10dp"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@color/blackColorVentax" />
+
+            <Button
+                android:shadowColor="@color/blackColorVentax"
+                android:text="@string/ingresar"
+                android:textColor="@color/blackColorVentax"
+                android:id="@+id/loginButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/style_popup"
+                android:elevation="5dp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:padding="12dp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+                <!--
+                            <com.facebook.login.widget.LoginButton
+                                android:id="@+id/login_face_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+                -->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:background="@color/blackColorVentax"
+                android:fontFamily="monospace"
+                android:text="@string/registrarse"
+                android:textColor="@color/whiteColorVentax"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/testGlide"
+            android:layout_gravity="center|top"
+            android:layout_margin="35dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ventax_logo"/>
+
+    </FrameLayout>
+
+</LinearLayout>

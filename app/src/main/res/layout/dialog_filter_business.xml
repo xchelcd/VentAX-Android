@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_popup"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cancelImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:padding="8dp"
+                android:src="@drawable/ic_baseline_close_24" />
+
+            <Button
+                android:id="@+id/filterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/style_popup"
+                android:fontFamily="monospace"
+                android:padding="8dp"
+                android:shadowColor="@color/blackColorVentax"
+                android:shadowDx="2"
+                android:shadowDy="3"
+                android:shadowRadius="5"
+                android:text="@string/filter"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/allCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:text="@string/all"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/craftsCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="7"
+                    android:text="@string/crafts"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+
+                <CheckBox
+                    android:id="@+id/electronicCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="1"
+                    android:text="@string/electronic"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/fashionCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="6"
+                    android:text="@string/fashion"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/sportCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="5"
+                    android:text="@string/sports"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/dessertCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="4"
+                    android:text="@string/desserts"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+
+                <CheckBox
+                    android:id="@+id/foodCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="0"
+                    android:text="@string/food"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/giftsCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="8"
+                    android:text="@string/gifts"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/petsCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="9"
+                    android:text="@string/pets"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/clothesCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="10"
+                    android:text="@string/clothes"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/healthCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="2"
+                    android:text="@string/health"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/accesoryCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="12"
+                    android:text="@string/accesory"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+
+                <CheckBox
+                    android:id="@+id/artCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="11"
+                    android:text="@string/art"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/styleCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_radio_button"
+                    android:button="@null"
+                    android:tag="3"
+                    android:text="@string/style"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blackColorVentax"
+                    android:textStyle="italic" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

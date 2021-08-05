@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:background="@drawable/style_dialog_information"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_info_24"
+            android:id="@+id/informationScheduleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/cambia_tu_horario"
+            android:textAlignment="center"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="HORA DE APERTURA"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="HORA DE CIERRE"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Lunes"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startMondayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endMondayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Martes"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startTuesdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endTuesdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Miércoles"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startWednesdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endWednesdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Jueves"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startThursdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endThursdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Viernes"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startFridayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endFridayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Sábado"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startSaturdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endSaturdayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:text="Domingo"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax" />
+
+            <TextView
+                android:id="@+id/startSundayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="APERTURA"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+
+            <TextView
+                android:id="@+id/endSundayTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="CIERRE"
+                android:padding="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="@color/blackColorVentax"
+                android:textColorHint="@color/grayColorVentax" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

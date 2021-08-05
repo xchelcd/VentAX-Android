@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColorVentax"
+    android:orientation="vertical">
+
+    <TextView
+        android:drawableStart="@drawable/ic_baseline_vertical_split_24"
+        android:drawablePadding="5dp"
+        android:id="@+id/accountTypeTextView"
+        android:text="@string/VAX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:textColor="@color/blackColorVentax"
+        android:textSize="27sp"
+        android:textStyle="bold"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/style_dialog_information"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:text="Sugerencias o quejas ☻"
+            android:textAlignment="center"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/suggestionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="¡Siéntete libre de escribirnos!"
+            android:maxHeight="130dp"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:background="@drawable/style_custom_selected_edittext"
+            android:textColor="@color/blackColorVentax"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/grayColorVentax" />
+
+        <Button
+            android:id="@+id/sendSuggestionButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/style_popup"
+            android:elevation="5dp"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.1"
+            android:padding="12dp"
+            android:shadowColor="@color/blackColorVentax"
+            android:text="@string/enviar"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

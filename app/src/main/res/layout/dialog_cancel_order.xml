@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:background="@drawable/style_popup"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:text="¿Está seguro que desea cancelar el pedido?"
+            android:textAlignment="center"
+            android:textColor="@color/blackColorVentax"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:shadowColor="@color/blackColorVentax"
+            android:shadowRadius="1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:layout_margin="10dp"
+            android:id="@+id/noCancelButton"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/style_popup"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:text="No quiero cancelar"
+            android:textColor="@color/blackColorVentax"
+            android:textStyle="bold" />
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/style_popup"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:text="Sí, quiero cancelar"
+            android:textColor="@color/blackColorVentax" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

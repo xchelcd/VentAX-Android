@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/qtyOrderProductTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:text="5"
+        android:textColor="@color/blackColorVentax" />
+
+    <TextView
+        android:id="@+id/nameOrderProductTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Product 1 mamalon de calidad mamalona"
+        android:textColor="@color/blackColorVentax" />
+
+    <TextView
+        android:id="@+id/totalOrderProductTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:text="$500.00"
+        android:textColor="@color/blackColorVentax" />
+</TableRow>
