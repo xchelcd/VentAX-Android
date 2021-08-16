@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 /app/src/main/java/com/idax/ventax/Extra/EndPoints.java
+/.idea/vcs.xml

@@ -16,6 +16,7 @@ public class LaunchPresenter {
     public LaunchPresenter(LaunchView view) {
         this.view = view;
     }
+
     public void GetCheckUserByUserCredentials(User user){
         Get get = Conn.getClient().create(Get.class);
         Call<LoginModel> call = get.GetCheckUserByUserCredentials(user.getPhone(),user.getId());//user.getUserName(), user.getId());

@@ -17,6 +17,7 @@ import static com.idax.ventax.Extra.EndPoints.STATE_COMPANY;
 import static com.idax.ventax.Extra.EndPoints.LOG_OUT;
 import static com.idax.ventax.Extra.EndPoints.NEXT_STEP_ORDER;
 import static com.idax.ventax.Extra.EndPoints.CONFIGURATION_MODEL;
+import static com.idax.ventax.Extra.EndPoints.UPDATE_FAQS;
 import static com.idax.ventax.Extra.EndPoints.UPDATE_PRODUCT;
 import static com.idax.ventax.Extra.EndPoints.STATE_PRODUCT;
 import static com.idax.ventax.Extra.EndPoints.COMPANY_PHOTO;
@@ -39,7 +40,7 @@ public interface Update {
     @POST(restURL + CONFIGURATION_MODEL)
     Call<String> UpdateCompanyConfigurationModel(@Body CompanyConfigurationModel ccm);
 
-    @POST(restURL + "UpdateFAQs")
+    @POST(restURL + UPDATE_FAQS)
     Call<String> UpdateFAQs(@Body FAQModel faqModel);
 
     @FormUrlEncoded
